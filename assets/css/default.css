@@ -1,0 +1,163 @@
+.reader_container {
+  width: 100%;
+  height: 50%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+}
+div#reader {
+  height: 80%;
+  min-height: 100px;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+div#reader_controls {
+  border: 1px solid black;
+  height: 20%;
+  padding: 20px;
+  display: flex;
+  background-color: #00b1f5;
+  align-items: center;
+  justify-content: space-around;
+}
+#reader_controls .reader_icons img {
+  width: 45%;
+  padding: 5px;
+  background-color: #9e9e9e;
+  border-radius: 50px;
+  display: inline;
+}
+#reader_controls .reader_icons img:hover {
+  background-color: #d8cfcf;
+}
+div#reader_controls .reader_icons {
+  display: block;
+  text-align: center;
+  position: relative;
+}
+
+#model-content-area h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+#model-content-area,
+#model-content-area p {
+  /* line-height: 2; */
+  vertical-align: middle;
+  margin: 0;
+  /* text-indent: 20px; */
+  font-size: 1.4rem;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 10px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: auto;
+  overflow: auto; /* Enable scroll if needed */
+  /* background-color: rgb(0, 0, 0); 
+  background-color: rgba(0, 0, 0, 0.4);  */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #eaeaea;
+  margin: auto;
+  padding: 5px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  /* font-size: 28px; */
+  line-height: normal;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.select-box {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Open Sans", "Helvetica Neue", "Segoe UI", "Calibri", "Arial",
+    sans-serif;
+  font-size: 18px;
+  color: #60666d;
+}
+
+@media (min-width: 768px) {
+  .select-box {
+    width: 90%;
+  }
+}
+
+@media (max-width: 450px) {
+  #reader_controls .reader_icons img {
+    width: 60%;
+  }
+
+  .reader_icons span {
+    width: 30% !important;
+    left: -8% !important;
+  }
+
+  div.reader_container {
+    width: 300px !important;
+  }
+}
+.select-box__list {
+  /* width: 100%; */
+  padding: 0;
+  list-style: none;
+  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.select-box__list li {
+  margin: 0px;
+  margin-top: 15px;
+}
+
+.select-box__option {
+  display: block;
+  padding: 15px;
+  background-color: #fff;
+}
+.select-box__list li {
+  border: 1px dotted;
+}
+.select-box__option:hover,
+.select-box__option:focus {
+  color: #546c84;
+  background-color: #fbfbfb;
+}
+.reader_icons span {
+  background-color: #8ddbff;
+  /* padding-bottom: 0px; */
+  display: inline-block;
+  position: absolute;
+  width: 18%;
+  left: 12%;
+  border-radius: 50%;
+  padding: 0px;
+  color: white;
+  font-weight: bolder;
+  font-size: 16px;
+}
